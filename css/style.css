@@ -1,0 +1,347 @@
+
+* {
+    box-sizing: border-box;
+
+    
+}
+
+/* Mobile-first approach in the styling (default styling is suitable for mobile and properties are adjusted for tablet and desktop when media queries are introduced). */
+
+html, body, h1, h2, h3, p, ul, li {
+margin: 0;
+padding: 0;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+  
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+/* header */
+.wrapper {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+header {
+   background-color: #fff; 
+   color: #222;
+   
+}
+
+header div {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+ul li {
+    
+    list-style-type: none;
+    padding: .6em .3em;
+    margin-right: .6em;
+    align-items: center;
+}
+
+ul li a {
+    color: #222;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+/* images */
+img {
+    width: 100%;
+
+}
+
+.images  {
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: 
+   "image-1 image-1 image-1"
+   "image-2 image-3 image-4"
+   ;
+   gap: 1rem;
+   
+
+
+   max-width: 1200px;
+   margin: 0;
+  
+   padding-top: 1.5em;
+   
+}
+
+.images img:nth-child(1) {
+    grid-area: image-1;
+
+}
+
+
+.images img {
+    border-radius: 4px;
+}
+
+
+
+.grid .sub-heading p {
+    margin: 0;
+    
+}
+
+h1 {
+    padding-top: 1em;
+}
+.grid .sub-heading > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+
+
+
+
+/* Sweethearts Affair */
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    margin-bottom: 1.5em;
+    
+
+}
+
+h1 {
+    font-size:  2.027rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 20px;
+    
+}
+
+
+.grid a:link, .grid a:visited {
+    padding: .3em 1em;
+    background-color: #000;
+    color: #fff;
+    border-color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    
+    margin-top: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+   
+  
+  
+}
+
+
+/* Behind the dough */
+
+#behind-the-dough {
+    background-color: #f8fafc;
+    padding-top: 3em; 
+    padding-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr;  
+    
+}
+
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.802rem;
+    padding-bottom: 30px;
+    
+
+}
+
+/* what people are saying */
+#what-people-are-saying {
+    background-color: #000;
+    padding-top: 1.5em; 
+    padding-bottom: 1.5em;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;   
+ 
+}
+#what-people-are-saying {
+    border-top: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1rem;
+    gap: 4rem;
+    
+}
+
+
+/* 
+try it with */
+
+.try {
+    padding-top: 2rem;
+}
+
+.try-it-article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: center;
+    
+}
+
+
+
+.try-it-article  article{
+    
+    background-color: #f8f8fc;
+    border-radius: 8px;
+
+
+}
+
+.try-it-article article img{
+    background-color: #f8f8fc;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+
+
+}
+
+.try-it-article p {
+    margin-top: 0;
+}
+
+.try-it-with h2 {
+   text-align: center;
+
+
+}
+
+    
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1.125rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+/* 1st media query */
+
+@media (min-width: 768px) {
+
+    .logo {
+        width: 160px;
+
+    }
+
+    .behind-the-dough-text {
+        display: flex;
+        gap: 40px;
+    }
+
+    .images {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "image-1 image-2"
+        "image-3 image-4";
+    }
+
+    .what-people-are-saying-quote {
+        display: flex;
+    }
+
+
+
+
+    .try-it-article {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+
+
+
+}
+
+
+/* 2nd media query */
+
+@media (min-width: 960px) {
+    
+    .sweetheart-affair {
+        display: flex;
+        max-width: 1200px;
+        gap: 20px;
+    }
+
+    .images {
+        width: 50%;
+        
+    }
+
+    .grid {
+        width: 50%;
+       
+    }
+
+   
+
+    
+
+
+
+
+
+
+    
+}
